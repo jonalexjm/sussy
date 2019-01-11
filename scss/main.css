@@ -4,13 +4,13 @@ body, html {
 
 body {
   font-family: 'Montserrat';
-  background-color: blue;
+  margin: 0;
 }
 
 body #bg {
-  -webkit-clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
-          clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
-  background-color: #FFF6BB;
+  -webkit-clip-path: polygon(100% 0, 100% 59%, 52% 100%, 0 100%, 0 1%);
+          clip-path: polygon(100% 0, 100% 59%, 52% 100%, 0 100%, 0 1%);
+  background-color: #005DFF;
   width: 100%;
   height: 100%;
   position: absolute;
