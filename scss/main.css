@@ -16,4 +16,13 @@ body #bg {
   position: absolute;
   z-index: -1;
 }
+
+body #bg header a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
 /*# sourceMappingURL=main.css.map */
