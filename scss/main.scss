@@ -1,10 +1,12 @@
 $colors: (
     primary: #005DFF,
+    primary-light: lighten(#005DFF, 40%),
     accent: #FFF6BB
 
 );
 
 $padding: 15px;
+$borders: 15px;
 
 @function color($color-name){
     @return map-get($colors, $color-name )
@@ -25,20 +27,44 @@ body{
         position: absolute;
         z-index: -1;
 
-        header a{
-            color: #FFF;
-            text-decoration: none;
-            padding: $padding;
-            display: block;
-            text-decoration: uppercase;
-  
-        }
+        
       }
+      header a{
+        color: #FFF;
+        text-decoration: none;
+        padding: $padding;
+        display: block;
+        text-decoration: uppercase;
+
+    }
 
      main{
         section#card{
             
-            
+            background: #FFF;
+            padding: 20px;
+            margin: 1em auto;
+            border-radius: $borders;
+            box-shadow: 0 10px 30px rgba(0,0,0,.2);
+            width: 80%;
+
+            ul{
+                list-style-type: none;
+                margin: 0; padding: 0;
+
+                li{
+                    margin-bottom: 10px;
+                    
+                    span{
+                        position: absolute;
+                        content: '';
+                        width: 30px;
+                        height: 30px;
+                        background-color: color(primary-light);
+                        border-radius: 50%;
+                    }
+                }
+            }
 
          }
      }

@@ -17,12 +17,41 @@ body #bg {
   z-index: -1;
 }
 
-body #bg header a {
+body header a {
   color: #FFF;
   text-decoration: none;
   padding: 15px;
   display: block;
   -webkit-text-decoration: uppercase;
           text-decoration: uppercase;
+}
+
+body main section#card {
+  background: #FFF;
+  padding: 20px;
+  margin: 1em auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+body main section#card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body main section#card ul li {
+  margin-bottom: 10px;
+}
+
+body main section#card ul li span {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ccdfff;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */
