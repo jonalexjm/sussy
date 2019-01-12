@@ -1,6 +1,7 @@
 $colors: (
     primary: #005DFF,
     primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%),
     accent: #FFF6BB
 
 );
@@ -29,6 +30,7 @@ body{
 
         
       }
+      
       header a{
         color: #FFF;
         text-decoration: none;
@@ -62,10 +64,45 @@ body{
                         height: 30px;
                         background-color: color(primary-light);
                         border-radius: 50%;
+                        margin-right: 10%;
+                    }
+                    strong{
+                        display: inline;
+                        margin-left: max(40px);
+                        margin-top: 10px;
                     }
                 }
             }
 
+         }
+
+         section#primary{
+             color: #FFF;
+             padding: $padding;
+             text-align: center;
+
+             h1{
+                 font-size: 3m;
+                 margin-top: 10px;
+                 text-transform: uppercase;
+             }
+
+             p{
+                 font-size: 1.4em;
+             }
+             a{
+                 color: color(primary-dark);
+                 border-radius: $borders;
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 font-weight: bold;
+                 background-color:color(accent);
+                 display: block;
+                 text-align: center;
+                 margin: 50px auto 0 auto;
+                 padding: $padding;
+
+             }
          }
      }
 
