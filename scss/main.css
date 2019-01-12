@@ -17,6 +17,13 @@ body #bg {
   z-index: -1;
 }
 
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 1%, 83% 1%, 58% 100%, 0% 100%);
+            clip-path: polygon(0 1%, 83% 1%, 58% 100%, 0% 100%);
+  }
+}
+
 body header a {
   color: #FFF;
   text-decoration: none;
@@ -24,6 +31,16 @@ body header a {
   display: block;
   -webkit-text-decoration: uppercase;
           text-decoration: uppercase;
+}
+
+@media (min-width: 840px) {
+  body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
+  }
 }
 
 body main section#card {
@@ -34,6 +51,19 @@ body main section#card {
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 80%;
+}
+
+@media (min-width: 840px) {
+  body main section#card {
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 1em;
+  }
 }
 
 body main section#card ul {
@@ -57,7 +87,7 @@ body main section#card ul li span {
 }
 
 body main section#card ul li strong {
-  display: inline;
+  display: inline-block;
   margin-left: 40px;
   margin-top: 10px;
 }
@@ -68,10 +98,26 @@ body main section#primary {
   text-align: center;
 }
 
+@media (min-width: 840px) {
+  body main section#primary {
+    grid-area: primary;
+    text-align: left;
+    margin: 4 em 0 0  4em;
+  }
+}
+
 body main section#primary h1 {
   font-size: 3m;
   margin-top: 10px;
   text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+  body main section#primary h1 {
+    width: 30%;
+    font-size: 4 em;
+    line-height: .9em;
+  }
 }
 
 body main section#primary p {
@@ -89,5 +135,12 @@ body main section#primary a {
   text-align: center;
   margin: 50px auto 0 auto;
   padding: 15px;
+}
+
+@media (min-width: 840px) {
+  body main section#primary a {
+    display: inline-block;
+    padding: 15px 60px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
